@@ -82,7 +82,7 @@
 <p>The reasoning: those players could be a couple bad plays away from being scratched from the lineup on any given night.</p>
 <p>Forwards tend to not be that tall and strong, so the method of “playing bigger than you are” tends to come into play in this instance. Every play, every second of ice time is made the most by each of the those players. Not to mention, with the defenseman on a roster, they tend to be bigger, stronger and taller, allowing them to act more as enforcers on the ice.</p>
 <p>The main question that needs to be asked: Do the amount of hits a team in the NHL has factor into their success?</p>
-<p>Now, take a look at each team’s hit totals up to this point in the 2021-22 season.</p>
+<p>Now, take a look at each top ten team’s hit totals up to this point in the 2021-22 season.</p>
 <pre><code>## Rows: 32
 ## Columns: 44
 ## $ Rk          &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,~
@@ -175,10 +175,7 @@
 ## $ `BS-A`      &lt;dbl&gt; 933, 864, 865, 845, 837, 1141, 947, 933, 973, 882
 ## $ `BS-D`      &lt;dbl&gt; 97, 102, 15, 182, 47, -290, -19, 62, 158, 165
 ## $ `BS-D/GP`   &lt;dbl&gt; 1.406, 1.478, 0.214, 2.564, 0.672, -4.143, -0.268, 0.885, ~</code></pre>
-<p><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
-<img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
-<img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
-<img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-4-2.png" width="672" /><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-4-3.png" width="672" /><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-4-4.png" width="672" /></p>
 <pre class="r"><code>ggplot() +
   geom_bar(data=NHL, aes(x=reorder(Team, `HITS`), weight=`HITS`)) +
   scale_y_continuous(labels=comma) +
@@ -191,7 +188,7 @@
     plot.subtitle = element_text(size=12), 
     panel.grid.minor = element_blank()
     )</code></pre>
-<p><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<p><img src="http://j-lill1102.github.io/2022/03/31/does-the-amount-of-hits-by-a-team-in-the-nhl-weigh-into-their-wins/index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 The Florida Panthers, Colorado Avalanche and the Carolina Hurricanes round out the top three spots in the overall NHL standings TALK ABOUT THEM</p>
 <p>(TALK ABOUT THE HITS)</p>
 <p>Looking more in depth, let’s take a glance at the top 30 hitters in the NHL. There will be instances where multiple players that are top 30 in hits are on the same team. In that case, if you’re on a playoff team with that stat, it could help bolster your play big-time! At the end of it all, how many of the top 30 hitters in the league are on playoff-contending teams?</p>
